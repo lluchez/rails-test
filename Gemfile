@@ -32,8 +32,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Use PostgreSQL for dev env
-  gem 'pg', '~> 0.21.0'
+  # Use MySQL for dev and test
+  gem 'mysql2', '~> 0.4.8'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
@@ -42,14 +42,17 @@ group :development, :test do
 end
 
 group :development do
-  # Use MySQL for dev env
-  gem 'mysql2', '~> 0.4.8'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :production do
+  # Use PostgreSQL for production
+  gem 'pg', '~> 0.21.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
