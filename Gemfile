@@ -37,7 +37,6 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
 end
 
@@ -48,6 +47,23 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'codecov', :require => false
+  # gem 'poltergeist'
+  # gem 'ci_reporter'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  # gem "fakeredis"
+  gem 'guard-rspec', require: false
+  # gem 'launchy'
+  gem 'rspec-rails'
+  gem 'shoulda'
+  gem 'simplecov', '0.7.1', :require => false
+  gem 'webmock'
+  # gem 'rspec_junit_formatter', '0.2.2'
 end
 
 group :production do
