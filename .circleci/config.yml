@@ -17,11 +17,11 @@ jobs:
         environment:
           MYSQL_ALLOW_EMPTY_PASSWORD: true
           MYSQL_ROOT_HOST: "%"
+          MYSQL_ROOT_PASSWORD: ""
           # MYSQL_ALLOW_EMPTY_PASSWORD: yes
           # MYSQL_ROOT_HOST: "%"
           # MYSQL_HOST: "localhost
           # MYSQL_USER: "ubuntu"
-          # MYSQL_ROOT_PASSWORD: ""
           # MYSQL_DATABASE: "circle_test"
 
     working_directory: ~/repo
