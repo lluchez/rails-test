@@ -16,10 +16,11 @@ jobs:
       - image: circleci/mysql:5.7
         environment:
           MYSQL_ALLOW_EMPTY_PASSWORD: yes
-          MYSQL_HOST: localhost
-          MYSQL_USER: ubuntu
+          MYSQL_ROOT_HOST: "%"
+          MYSQL_HOST: "localhost"
+          MYSQL_USER: "ubuntu"
           MYSQL_ROOT_PASSWORD: ""
-          MYSQL_DATABASE: circle_test
+          MYSQL_DATABASE: "circle_test"
 
     working_directory: ~/repo
 
