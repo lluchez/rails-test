@@ -1,3 +1,11 @@
+circle:
+  adapter: mysql2
+  database: circle_test
+  username: ubuntu
+  host: localhost
+  port: 3306
+  socket: /var/run/mysqld/mysqld.sock2
+
 development:
   # adapter: mysql2
   # encoding: utf8
@@ -8,26 +16,21 @@ development:
   # password:
   # socket: /tmp/mysql.sock
   adapter: mysql2
-  database: circle_ruby_test
+  database: circle_test
   username: ubuntu
   host: localhost
   port: 3306
   socket: /var/run/mysqld/mysqld.sock
 
 test:
-  # adapter: mysql2
-  # encoding: utf8
-  # reconnect: false
-  # database: rails_test_test
-  # pool: 5
-  # username: root
-  # password:
-  # socket: /tmp/mysql.sock
   adapter: mysql2
-  database: circle_ruby_test
-  username: ubuntu
-  host: localhost
-  socket: /var/run/mysqld/mysqld.sock
+  encoding: utf8
+  reconnect: false
+  database: rails_test_test
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
 
 production:
   # adapter: postgresql
