@@ -28,11 +28,6 @@ test:
   socket: /tmp/mysql.sock
 
 production:
-  # adapter: postgresql
   encoding: utf8
   reconnect: false
-  # database: rails_test_production
   pool: 5
-  # username: root
-  # password:
-  # socket: /tmp/mysql.sock
