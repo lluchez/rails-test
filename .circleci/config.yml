@@ -16,8 +16,12 @@ jobs:
       - image: circleci/mysql:5.7
         environment:
           MYSQL_ALLOW_EMPTY_PASSWORD: true
-          MYSQL_ROOT_HOST: "%"
-          MYSQL_ROOT_PASSWORD: ""
+          MYSQL_ROOT_HOST: '%'
+          MYSQL_USER: ubuntu
+          MYSQL_PASSWORD: ubuntu
+          # MYSQL_ALLOW_EMPTY_PASSWORD: yes
+          # MYSQL_ROOT_HOST: "%"
+          # MYSQL_ROOT_PASSWORD: ""
           # MYSQL_ALLOW_EMPTY_PASSWORD: yes
           # MYSQL_ROOT_HOST: "%"
           # MYSQL_HOST: "localhost
