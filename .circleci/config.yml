@@ -15,14 +15,14 @@ jobs:
       # - image: circleci/postgres:9.4
       - image: circleci/mysql:5.7
         environment:
+          MYSQL_ALLOW_EMPTY_PASSWORD: true
+          MYSQL_ROOT_HOST: "%"
           # MYSQL_ALLOW_EMPTY_PASSWORD: yes
           # MYSQL_ROOT_HOST: "%"
           # MYSQL_HOST: "localhost
           # MYSQL_USER: "ubuntu"
           # MYSQL_ROOT_PASSWORD: ""
           # MYSQL_DATABASE: "circle_test"
-          MYSQL_ALLOW_EMPTY_PASSWORD: true
-          MYSQL_ROOT_HOST: "%"
 
     working_directory: ~/repo
 
