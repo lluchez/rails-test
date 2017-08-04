@@ -21,11 +21,11 @@ test:
 #     sql_mode: TRADITIONAL
 
 production:
-  adapter: mysql2
+  # adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: rails_test_production
+  # database: rails_test_production
   pool: 5
-  username: root
-  password:
-  socket: /tmp/mysql.sock
+  # username: root
+  # password:
+  # socket: /tmp/mysql.sock
