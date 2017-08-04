@@ -21,6 +21,7 @@ test:
   database: circle_ruby_test
   username: ubuntu
   host: localhost
+  socket: /var/run/mysqld/mysqld.sock
 
 production:
   # adapter: postgresql
