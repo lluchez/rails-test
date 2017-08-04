@@ -1,26 +1,21 @@
+# you will need to:
+# - add the env var `RAILS_ENV` => `circle` to  CircleCI
+# - add config/environments/circle.rb` (copy of `test.rb`)
 circle:
   adapter: mysql2
   database: circle_test
   username: ubuntu
   host: localhost
-  port: 3306
-  socket: /var/run/mysqld/mysqld.sock2
 
 development:
-  # adapter: mysql2
-  # encoding: utf8
-  # reconnect: false
-  # database: rails_test_development
-  # pool: 5
-  # username: root
-  # password:
-  # socket: /tmp/mysql.sock
   adapter: mysql2
-  database: circle_test
-  username: ubuntu
-  host: localhost
-  port: 3306
-  socket: /var/run/mysqld/mysqld.sock
+  encoding: utf8
+  reconnect: false
+  database: rails_test_development
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
 
 test:
   adapter: mysql2
