@@ -104,7 +104,7 @@ RSpec.describe TodosController, type: :controller do
         todo = Todo.create! valid_attributes
         put :update, params: {id: todo.to_param, todo: new_attributes}, session: valid_session
         todo.reload
-        expect(todo.name).to eq(new_attributes[:name])
+        expect(todo.name).to eq(new_attributes[:name]+"0")
         expect(todo.done).to eq(false)
       end
 
