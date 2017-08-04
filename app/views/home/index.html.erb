@@ -1,2 +1,9 @@
 <h1>Rails Test</h1>
 <p>Simple test page to test creation of a Rails App</p>
+
+<h2>Listing Todos</h2>
+<ul>
+  <% @todos.each do |todo| %>
+    <li class="<%= todo.done ? "done" : "" %>"><%= todo.name %></li>
+  <% end %>
+</ul>
