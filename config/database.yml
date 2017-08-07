@@ -4,7 +4,6 @@
 circle:
   adapter: mysql2
   database: circle_test
-  # database: circle_ruby_test
   username: ubuntu
   password: ubuntu
   host: localhost
