@@ -1,8 +1,11 @@
-This is a test project to test deployment on heroku and using apps like Rollbar
+This is a test project to test deployment on heroku and using apps/tools like CircleCI, Rollbar, CodeClimate, etc
+
+Project is currently visible [here](https://lluchez-rails-test.herokuapp.com/). The following resource is also accessible: `[todos](https://lluchez-rails-test.herokuapp.com/todos)`.
 
 # Steps
 
-You can also use teh following [link](https://relishapp.com/rspec/rspec-rails/docs/gettingstarted) to help you getting started.
+Below are the steps I followed to install of these tools/apps and creating the Rails webapp from scratch.
+You can also use the following [link](https://relishapp.com/rspec/rspec-rails/docs/gettingstarted) to help you getting started.
 
 ## Installing Ruby and Rails
 ```
@@ -25,7 +28,7 @@ If you need to switch to MySQL afterwards, run the following command:`gem instal
 
 
 ## Github
-To be documented...
+TO DO: To be documented...
 
 ## Heroku
 ### Create an heroku instance
@@ -47,6 +50,9 @@ production:
   reconnect: false
   pool: 5
 ```
+
+When going to `Settings` on your Heroku App page, next to `Domains and certificates` you will be able to see the URL of your app.
+You can also add a `NodeJS` build step for instance (if you're using `Webpack`/`Yarn`).
 
 
 ## Unit Test (Rspec/FacoryGirl)
@@ -136,5 +142,12 @@ For builds to be automatically triggered, you can go to `GitHub` and setup a Web
 - Click on `Webhooks` (left panel)
 - Click on `Add webhook`
   - Payload URL: `https://circleci.com/hooks/github`
-  - Secret: Visit [this page](https://developer.github.com/webhooks/securing/#setting-your-secret-token) for more information
+  - Secret: Visit [this page](https://developer.github.com/webhooks/securing/#setting-your-secret-token) for more information. I actually don't remember what I did here. #oups
   - Select `Let me select individual events` and select the relevant events. Basically everything, except: `Deployment`, `Deployment status`, `Label`, `Milestone`, `Page Build`, ``Project`, `Project card`, `Project column`, `Pull request review` and `Repository`). NOTE, actually this can probably be triggered on way less events.
+
+## Rollbar
+TO DO: To be installed...
+
+## CodeClimate
+TO DO: To be installed...
+
