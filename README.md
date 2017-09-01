@@ -151,3 +151,7 @@ TO DO: To be installed...
 ## CodeClimate
 TO DO: To be installed...
 
+
+# Other resources
+- https://github.com/bodyshopbidsdotcom/rubo-on-rails-template
+- https://github.com/bodyshopbidsdotcom/snapsheet-tx/pull/376/files
