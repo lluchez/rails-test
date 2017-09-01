@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  resources :todos
+  resources :todos do
+    get 'test'
+  end
   root 'home#index'
 end

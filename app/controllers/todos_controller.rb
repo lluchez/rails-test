@@ -61,6 +61,14 @@ class TodosController < ApplicationController
     end
   end
 
+  def test
+    Rollbar.info("todos/test called")
+    respond_to do |format|
+      format.html { render :test }
+      format.json { render json: {:test => 'It worked'}, status: :ok, location: @data  }
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_todo
