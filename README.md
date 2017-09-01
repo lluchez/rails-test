@@ -146,7 +146,14 @@ For builds to be automatically triggered, you can go to `GitHub` and setup a Web
   - Select `Let me select individual events` and select the relevant events. Basically everything, except: `Deployment`, `Deployment status`, `Label`, `Milestone`, `Page Build`, ``Project`, `Project card`, `Project column`, `Pull request review` and `Repository`). NOTE, actually this can probably be triggered on way less events.
 
 ## Rollbar
-TO DO: To be installed...
+Rollbar is pretty straightforward to bring in.
+Creating a new project from rollbar.com will guide you through the steps.
+*Note:* there is an option to store the access token outside the repo rather than in `rollbar.rb` by storing it into an environment variable:
+```
+$ rails generate rollbar
+$ export ROLLBAR_ACCESS_TOKEN=<your_access_token>
+$ heroku config:add ROLLBAR_ACCESS_TOKEN=<your_access_token>
+```
 
 ## CodeClimate
 TO DO: To be installed...
